@@ -188,10 +188,10 @@ $(document).ready(function(){
         var cmt = $(this).siblings().eq(0).val();
         if(cmt.trim() != "") {
             var d = new Date();
-            h = d.getHours() > 9 ? d.getHours() : "0" + d.getHours();
-            m = d.getMinutes() > 9 ? d.getMinutes() : "0" + d.getMinutes();
-            s = d.getSeconds() > 9 ? d.getSeconds() : "0" + d.getSeconds();
-            postArea.append(`<div class="comment">${cmt}<span class="date">at ${d.getHours()}:${m}:${d.getSeconds()}</span></div>`)
+            h = d.getHours() > 9 ? d.getHours() : '0' + d.getHours();
+            m = d.getMinutes() > 9 ? d.getMinutes() : '0' + d.getMinutes();
+            s = d.getSeconds() > 9 ? d.getSeconds() : '0' + d.getSeconds();
+            postArea.append(`<div class="comment">${cmt}<span class="date">at ${h}:${m}:${s}</span></div>`)
             $('.postArea').css({
                 "display": "block"
             });
